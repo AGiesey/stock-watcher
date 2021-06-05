@@ -1,7 +1,6 @@
-import Marionette from 'backbone.marionette';
-import template from '../templates/stockCard.hbs'
+import { CollectionView } from 'backbone.marionette';
+import template from '../templates/stockCard.jst'
 
-//todo: it looks like this maybe should be a CollectionView
-export const StockCard = Marionette.View.extend({
+export const StockCard = CollectionView.extend({
   template: template
 });

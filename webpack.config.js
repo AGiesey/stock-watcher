@@ -22,7 +22,7 @@ const webpackCommon = {
         ]
       },
       {
-        test: /\.hbs$/,
+        test: /\.jstnp$/,
         use: {
           loader: 'underscore-template-loader'
         }
