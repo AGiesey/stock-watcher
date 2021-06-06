@@ -1,7 +1,33 @@
-import { Stock } from './stock';
+import Backbone from "backbone";
 
-export const stocks = [
-  new Stock('Alphabet Inc. CL C', 'GOOG', 'UP', .022, 706.32, 691, 709.28, 689.47),
-  new Stock('Yahoo! Inc.', 'YHOO', 'DN', .0003, 29.28, 29.66, 29.06),
-  new Stock('American International Group, Inc.', 'AIG', 'UP', .0196, 53.08, 52.06, 53.47, 52.28)
-]
+export const stocks = new Backbone.Collection([
+  {
+    name: 'Alphabet Inc. CL C',
+    symbol: 'GOOG',
+    changeDirection: 'UP',
+    changeAmmount: .022,
+    currentPrice: 706.32,
+    openPrice: 691,
+    highPrice: 709.28,
+    lowPrice: 689.47
+  },
+  {
+    name: 'Alphabet Inc. CL C',
+    symbol: 'GOOG',
+    changeDirection: 'UP',
+    changeAmmount: .022,
+    currentPrice: 706.32,
+    openPrice: 691,
+    highPrice: 709.28,
+    lowPrice: 689.47
+  },{
+    name: 'Alphabet Inc. CL C',
+    symbol: 'GOOG',
+    changeDirection: 'UP',
+    changeAmmount: .022,
+    currentPrice: 706.32,
+    openPrice: 691,
+    highPrice: 709.28,
+    lowPrice: 689.47
+  }
+]);
